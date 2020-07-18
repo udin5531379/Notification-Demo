@@ -1,0 +1,6 @@
+framework module Pods_n_otification_demo {
+  umbrella header "Pods-n otification-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

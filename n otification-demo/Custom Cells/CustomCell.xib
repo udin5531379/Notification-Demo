@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="50" id="KGk-i7-Jjw" customClass="CustomCell" customModule="n_otification_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="RNd-RP-euq">
+                        <rect key="frame" x="16" y="13" width="59" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="MZB-oo-w9r"/>
+                            <constraint firstAttribute="width" constant="59" id="niE-Ri-aY6"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redCircle" translatesAutoresizingMaskIntoConstraints="NO" id="lHA-SW-vP0">
+                        <rect key="frame" x="264" y="17" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6DZ-fi-C8v"/>
+                            <constraint firstAttribute="width" constant="40" id="e55-O8-Ze2"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ur3-Jq-ehp">
+                        <rect key="frame" x="95.5" y="14" width="130" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Queue_Member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcb-qg-WiJ">
+                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queue_Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceR-be-4hg">
+                                <rect key="frame" x="0.0" y="23.5" width="106.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="130" id="0nd-Gb-QjL"/>
+                            <constraint firstAttribute="height" constant="47" id="cfK-Gz-IFh"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Calls Not Answered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFd-O3-ACC">
+                        <rect key="frame" x="258.5" y="25.5" width="51" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="5Hd-g5-J2g"/>
+                            <constraint firstAttribute="height" constant="23" id="oPm-Sv-QKK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lHA-SW-vP0" firstAttribute="leading" secondItem="Ur3-Jq-ehp" secondAttribute="trailing" constant="38.5" id="0NE-45-bSh"/>
+                    <constraint firstItem="RNd-RP-euq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9bb-LY-L9M"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RNd-RP-euq" secondAttribute="bottom" constant="2" id="DnX-qu-Apw"/>
+                    <constraint firstItem="lHA-SW-vP0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="FBx-Eq-ypY"/>
+                    <constraint firstItem="Ur3-Jq-ehp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="K8t-qv-hnK"/>
+                    <constraint firstItem="FFd-O3-ACC" firstAttribute="centerY" secondItem="lHA-SW-vP0" secondAttribute="centerY" id="WKd-63-Im8"/>
+                    <constraint firstItem="RNd-RP-euq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="aW4-cW-0Wq"/>
+                    <constraint firstItem="FFd-O3-ACC" firstAttribute="centerX" secondItem="lHA-SW-vP0" secondAttribute="centerX" id="gtr-Q5-t0B"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lHA-SW-vP0" secondAttribute="bottom" constant="7" id="jFu-Zb-XAD"/>
+                    <constraint firstItem="Ur3-Jq-ehp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wpK-lF-hPr"/>
+                    <constraint firstItem="Ur3-Jq-ehp" firstAttribute="leading" secondItem="RNd-RP-euq" secondAttribute="trailing" constant="20.5" id="wz9-eE-aXE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="callsNotAnsweredLabel" destination="FFd-O3-ACC" id="1m5-RI-ial"/>
+                <outlet property="memberLabel" destination="Dcb-qg-WiJ" id="0cN-gO-7uW"/>
+                <outlet property="nameLabel" destination="ceR-be-4hg" id="Q1o-4t-x8z"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="136.28185907046478"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile" width="200" height="203"/>
+        <image name="redCircle" width="500" height="500"/>
+    </resources>
+</document>
